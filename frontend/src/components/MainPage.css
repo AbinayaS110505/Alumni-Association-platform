@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .mainPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+  }
+  
+  .searchBar {
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-left: 90px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Content layout */
+  .content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .profile {
+    width: 25%;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profileImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .userDetails h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .userDetails p {
+    color: #777;
+  }
+  
+  .editProfile, .addPost {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .editProfile {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .addPost {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  /* Feed Section */
+  .feed {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedItem {
+    margin-bottom: 20px;
+  }
+  
+  .feedItem p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .postImage {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Chat Section */
+  .chat {
+    width: 25%;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chatList {
+    list-style-type: none;
+  }
+  
+  .chatItem {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chatItem:hover {
+    background-color: #ccc;
+  }
+  

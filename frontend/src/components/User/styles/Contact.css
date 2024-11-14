@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .contactbody {
+    background-image: url('../images/contact_bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixes the background to stay in place */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contactcontainer {
+    border-radius: 6px;
+    position: relative;
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+    box-shadow: 0 0 10px rgba(15, 86, 157, 0.826);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    font-weight: 700;
+  }
+  
+  label {
+    color: black;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    width: 400px;
+    background-color: #fff;
+    flex-grow: 1;
+  }
+  
+  input:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    color: #000;
+  }
+  
+  textarea {
+    display: flex;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fff;
+    flex-grow: 1;
+    align-items: center;
+    height: 150px;
+    width: 500px;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  textarea:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .contact_button button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; 
+    width:100%;
+  }
+  
+  button:hover {
+    background-color: #b3a720;
+    color: #000;
+    box-shadow: #d6c617 2px 1px 2px 2px;
+  }
+  
+  /* Mobile View CSS */
+  @media (max-width: 768px) {
+    body {
+      padding: 0; /* Remove body padding for mobile */
+      height: 100vh; /* Ensure the body covers the full viewport */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .container {
+      width: 90vw; /* Take most of the screen width */
+      height: auto; /* Adjust height dynamically */
+      padding: 20px;
+      gap: 10px;
+      backdrop-filter: none; /* Remove blur for mobile */
+      background-color: rgba(255, 255, 255, 0.9); /* Add a slight background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0; /* Remove extra margins */
+    }
+  
+    input, textarea, button {
+      width: 100%; /* Make inputs, textarea, and button take full width */
+    }
+  
+    textarea {
+      height: 120px; /* Slightly reduce textarea height */
+    }
+  
+    button {
+      padding: 12px;
+      font-size: 16px; /* Slightly reduce button font size */
+    }
+  
+    h2 {
+      font-size: 24px; /* Slightly reduce heading size */
+    }
+  }

@@ -1,0 +1,204 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../adminimages/admin.jpg');
+    background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image in the div */
+  background-repeat: no-repeat;
+    line-height: 1.6;
+  }
+  
+  /* Main Dashboard Container */
+  .admin-dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px; /* Adjust for the fixed navbar */
+    padding: 20px;
+  }
+  
+  /* Left Sidebar - Admin Section */
+  .sidebar {
+    width: 200px;
+    background-color: #076614; /* Dark blue background */
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #ffcc00; /* Yellow hover effect */
+  }
+  
+  /* Center Content - Stats and Notification */
+  .center-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .center-content h2 {
+    font-size: 2.5rem;
+    color: #004f99; /* Blue color for title */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-left: 150px;;
+    
+  }
+  
+  .stat-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+  
+  .stat-box:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-box h3 {
+    font-size: 1.5rem;
+    color: #004f99;
+    margin-bottom: 15px;
+  }
+  
+  .stat-box p {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Notification Container */
+  .notification-container {
+    background-image: url('https://via.placeholder.com/800x300.png?text=Alumni+Association'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+    color: #020202;
+  }
+  
+  .notification-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .notification-container p {
+    font-size: 1.2rem;
+  }
+  
+  /* Right Section - Manage Users */
+  .manage-users {
+    width: 200px;
+    background-color: hwb(103 2% 67%); /* Dark blue background */
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .manage-users h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .manage-users a {
+    color: #fff;
+    background-color: hsl(73, 94%, 53%);
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .manage-users a:hover {
+    background-color: #8ff865;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admin-dashboard {
+      flex-direction: column; /* Stack all sections vertically on small screens */
+      padding: 20px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .center-content {
+      margin-bottom: 20px;
+    }
+  
+    .stats-container {
+      grid-template-columns: 1fr; /* Stack stats in a single column */
+      gap: 15px;
+      
+    }
+  
+    .stat-box {
+      padding: 15px;
+    }
+  
+    .notification-container {
+      margin-top: 20px;
+    }
+  
+    .manage-users {
+      width: 100%;
+    }
+  }

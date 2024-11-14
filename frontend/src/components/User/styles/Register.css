@@ -1,0 +1,139 @@
+.registerbody {
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+    background-image: url('../images/loginregister_bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixes the background to stay in place */
+    background-size: cover;
+  }
+  
+  .registration-form {
+    backdrop-filter: blur(16px); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(250, 251, 255);
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .registration-form {
+   
+    box-shadow: 0 0 10px rgba(15, 86, 157, 0.826);
+  }
+  
+  .registration-form h2 {
+    margin-bottom: 20px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .form-grid {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .form-column {
+    width: 50vw; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registration-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .registration-form input,
+  .registration-form select {
+    width: 19vw;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .registration-form input[type="text"],
+  .registration-form input[type="email"],
+  .registration-form input[type="tel"],
+  .registration-form input[type="number"],
+  .registration-form select {
+    transition: border-color 0.3s;
+  }
+  
+  .registration-form input:focus,
+  .registration-form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .registration-form input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+  }
+  
+  .registration-form button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Space above button */
+  }
+  
+  .registration-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      height: auto; /* Allow body to take the content height */
+      overflow-y: auto; /* Enable scrolling on mobile */
+    }
+  
+    .registration-form {
+      width: 90vw; /* Reduce form width to fit mobile screen */
+      padding: 15px;
+      box-shadow: none; /* Simplify shadow for mobile */
+    }
+  
+    .form-grid {
+      display: block; /* Stack the form elements vertically */
+    }
+  
+    .form-column {
+      width: 100%; /* Make columns full width */
+    }
+  
+    .registration-form h2 {
+      font-size: 24px; /* Slightly smaller heading size for mobile */
+    }
+  
+    .registration-form input,
+    .registration-form select {
+      width: 100%; /* Make inputs and select elements full width */
+      font-size: 16px; /* Slightly larger font size for readability */
+    }
+  
+    .registration-form button {
+      width: 100%; /* Make button full width */
+      padding: 14px;
+      font-size: 18px; /* Make the button more prominent */
+    }
+  }
